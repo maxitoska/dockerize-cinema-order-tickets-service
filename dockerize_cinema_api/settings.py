@@ -59,7 +59,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "cinema_service.urls"
+ROOT_URLCONF = "dockerize_cinema_api.urls"
 
 TEMPLATES = [
     {
@@ -77,11 +77,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "cinema_service.wsgi.application"
+WSGI_APPLICATION = "dockerize_cinema_api.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+# Database
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
